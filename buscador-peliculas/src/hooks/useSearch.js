@@ -15,6 +15,8 @@ export function useSearch() {
       setError("No se puede buscar una película vacía");
       return;
     }
+
+    setError(null);
   }, [search]);
 
   return { search, setSearch, error };
